@@ -1,7 +1,6 @@
 .pytest_cache
 tmp/
-
 __pycache__
 build
 dist
-transformer.egg-info/
+*.egg-info/

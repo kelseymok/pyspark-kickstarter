@@ -27,7 +27,7 @@ From: [Jetbrains](https://www.jetbrains.com/help/pycharm/managing-dependencies.h
 ```bash
 cd app
 pyenv exec pip install -r requirements.txt -e .
-pytest
+pyenv exec pytest
 ```
 
 ### Build

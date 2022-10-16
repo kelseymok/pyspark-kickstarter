@@ -6,7 +6,7 @@ on:
 concurrency: ci-${{ github.ref }}
 
 jobs:
-  build-test:
+  test-and-build:
     runs-on: ubuntu-latest
     permissions:
       id-token: write

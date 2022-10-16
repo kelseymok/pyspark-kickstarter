@@ -1,0 +1,33 @@
+name: Build and Test
+on:
+  push:
+    branches: ['main']
+
+concurrency: ci-${{ github.ref }}
+
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
+    steps:
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v1
+
+      - name: Check out repository code
+        uses: actions/checkout@v2
+
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+      - name: Test
+        run: |
+          cd app
+          pip install -r requirements.txt -e .
+          pytest
+
+      - name: Build egg
+        run: |
+          cd app
+          python setup.py bdist_egg

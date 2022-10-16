@@ -1,0 +1,5 @@
+pytest_mock
+pandas
+pytest
+pyspark[sql]==3.1.1
+setuptools~=60.2.0

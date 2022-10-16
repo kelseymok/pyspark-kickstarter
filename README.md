@@ -18,7 +18,7 @@ From: [Jetbrains](https://www.jetbrains.com/help/pycharm/managing-dependencies.h
 
 ## Set the Test configuration
 1. Navigate to Edit Configurations... >  Edit Configuration Templates... Python > AutoDetect
-2. Add to *Environment Variables*: `PYSPARK_DRIVER_PYTHON=/usr/local/bin/python3.9;PYSPARK_PYTHON=/usr/local/bin/python3.9`
+2. Add to **Environment Variables**: `PYSPARK_DRIVER_PYTHON=/usr/local/bin/python3.9;PYSPARK_PYTHON=/usr/local/bin/python3.9`
 3. Make sure interpreter for Python 3.9 is set
 
 ## Build and Test Locally

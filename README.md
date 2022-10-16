@@ -26,13 +26,13 @@ From: [Jetbrains](https://www.jetbrains.com/help/pycharm/managing-dependencies.h
 
 ```bash
 cd app
-pip install -r requirements.txt -e .
+pyenv exec pip install -r requirements.txt -e .
 pytest
 ```
 
 ### Build
 ```bash
 cd app
-python setup.py bdist_egg
+pyenv exec python setup.py bdist_egg
 ```
           

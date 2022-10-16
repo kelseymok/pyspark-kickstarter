@@ -31,3 +31,13 @@ jobs:
         run: |
           cd app
           python setup.py bdist_egg
+
+      - name: Upload egg
+        run: |
+          cd app/dist
+          # TODO: Upload transformer-0.1.0-py3.9.egg somewhere
+
+      - name: Upload main.py
+        run: |
+          cd app
+          # TODO: Upload main.py somewhere

@@ -6,7 +6,9 @@
 3. Use pyenv to install the latest Python 3.9 version (e.g. `pyenv install 3.9.13`)
 4. [Install requirements.txt using Pycharm](#install-requirementstxt-using-pycharm)
 5. [Set the Test Configuration](#set-the-test-configuration)
-5. Run the tests by selecting the `test` dir and pressing control + shift + r
+6. Right click on the `src` dir, select `Mark directory as`, select `Sources root`
+7. Right click on the `test` dir, select `Mark directory as`, select `Test sources root`
+8. Run the tests by selecting the `test` dir and pressing control + shift + r
 
 ## Install requirements.txt using Pycharm:
 From: [Jetbrains](https://www.jetbrains.com/help/pycharm/managing-dependencies.html#configure-requirements)

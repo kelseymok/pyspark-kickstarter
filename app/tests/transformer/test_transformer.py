@@ -6,8 +6,8 @@ import sys
 
 from pyspark.sql.types import StringType, StructType, FloatType, StructField, IntegerType
 
-from Transformer import Transformer
 from test_utils.pyspark import TestPySpark
+from transformer.Transformer import Transformer
 
 
 class TesttTransformer(TestPySpark):
@@ -15,7 +15,7 @@ class TesttTransformer(TestPySpark):
     @classmethod
     def setup_class(cls):
         cls.spark = cls.start_spark()
-        root_dir = os.path.dirname(os.path.realpath(__file__)).split("/data_transformer/")[0]
+        root_dir = os.path.dirname(os.path.realpath(__file__)).split("/transformer/")[0]
         cls.parameters = {
             "input_path": f"{root_dir}/tmp_input/",
             "output_path": f"{root_dir}/tmp_output/",
